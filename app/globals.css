@@ -11,6 +11,59 @@ html.dark {
   --line-color: rgba(255, 255, 255, 0.2);
 }
 
+.typewriter {
+  color: transparent;
+  background-image: linear-gradient(#7eacd5, #7eacd5);
+  background-position: -20rem 0;
+  background-repeat: no-repeat;
+  -webkit-text-stroke: .7px #7eacd5;
+  background-clip: text;
+  animation: bgText 6s linear infinite;  /* typing 3.5s steps(40, end), */
+  animation-delay: 2s;
+}
+
+.typewriter::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border-right: 2px solid #00abf0;
+  animation:
+    typing 6s linear infinite,
+    blinkCursor .7s step-end infinite;
+  animation-delay: 2s;
+  z-index: -1;
+}
+
+@keyframes bgText {
+  from, to {
+    background-position: -20rem 0;
+  }
+  50% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes typing {
+  from, to {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+}
+
+@keyframes blinkCursor {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #00abf0;
+  }
+}
+
 
 @layer utilities {
   .flex-center {

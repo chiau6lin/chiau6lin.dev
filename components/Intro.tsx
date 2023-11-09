@@ -58,7 +58,7 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
         className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-3xl">
         <span className="font-bold">Hi, I'm Jamie</span>, a{" "}
-        <span className="font-bold">frontend developer</span> with{" "}
+        <span className="font-bold relative typewriter">Frontend Developer</span> with{" "}
         <span className="font-bold">6 years</span> of experience based in Taipei, Taiwan 🇹🇼.<br />
         I enjoy building <span className="italic">sites & apps</span>. My focus is{" "}
         <span className="underline">React/NextJS</span> and... <span className="underline">Vue/NuxtJS</span>, Why not both 👽.
